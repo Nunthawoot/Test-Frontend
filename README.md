@@ -1,103 +1,40 @@
-# Assignment
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 1. Auto Delete Todo List
+## Getting Started
 
-```
-    [
-        {
-            type: 'Fruit',
-            name: 'Apple',
-        },
-        {
-            type: 'Vegetable',
-            name: 'Broccoli',
-        },
-        {
-            type: 'Vegetable',
-            name: 'Mushroom',
-        },
-        {
-            type: 'Fruit',
-            name: 'Banana',
-        },
-        {
-            type: 'Vegetable',
-            name: 'Tomato',
-        },
-        {
-            type: 'Fruit',
-            name: 'Orange',
-        },
-        {
-            type: 'Fruit',
-            name: 'Mango',
-        },
-        {
-            type: 'Fruit',
-            name: 'Pineapple',
-        },
-        {
-            type: 'Vegetable',
-            name: 'Cucumber',
-        },
-        {
-            type: 'Fruit',
-            name: 'Watermelon',
-        },
-        {
-            type: 'Vegetable',
-            name: 'Carrot',
-        },
-    ]
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Please make a todo list that
-- Take text input
-- Show data by type from array based on text input.
-- Each text input will have 5 second on the screen then will be auto removed
-- If that data already exists, it must be moved back.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-See example in the link below
-[https://drive.google.com/file/d/11PUfxCc3wRvsBd5DBS-FvTz2AMRLgRMW/view?usp=sharing](https://drive.google.com/file/d/1o1prsZjBSHDsfcrDFsuxH6U261UM0BOI/view?usp=drive_link)
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-Please do your best to show your best solution
-we are looking for
-1. Answer the need of question
-2. Clean code easy to read
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Bonus: if you have multiple solutions we could discuss those theories in our interview (no need to submit multiple versions, just send us the best one you think.)
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## 2. Create data from API 
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-API from <https://dummyjson.com/users>
+## Learn More
 
-- Your project must use Typescript, Typescript module, and HTTP framework (GRPC is plus)
-- Tranforms JSON data from API to new data groupBy department
-- We encourage you to write tests, which we will give you some extra score
-- We will give you an extra score if you focus on performance.
+To learn more about Next.js, take a look at the following resources:
 
---- sample response --
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```json
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-department: [
-    {
-        "Marketing": {
-            "male": 1,                      // ---> Male Summary
-            "female": 1,                    // ---> Femlae Summary
-            "ageRange": "XX-XX",            // ---> Range
-            "ageMode": 1,                   // ---> Mode ฐานนิยม
-            "hair": {                       // ---> "Color": Color Summary
-                "Black": 1,                
-                "Blond": 1,
-                "Chestnut": 1,
-                "Brown": 1
-            },
-            "addressUser": {                // ---> "firstNamelastName": postalCode (address)
-                "TerryMedhurst": "XXXXX",
-            }
-        }
-    }, 
-    ...
-]
-```
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
